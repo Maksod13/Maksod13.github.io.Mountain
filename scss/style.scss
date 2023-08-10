@@ -1204,11 +1204,36 @@
             max-width: 1540px;
         }
     }
+
+    .ticket {
+        margin: 0;
+    }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1400px) {
+    .ticket{
+        margin-top: 200px;
+    }
+        .third__slide--container{
+            justify-content: flex-start;
+        }
+    .map1{
+        img{
+            max-width: 700px;
+        }
+    }
+    .bcg__img {
+        left: 0;
+
+        img {
+            max-width: 1400px;
+        }
+    }
+}
+
+@media screen and (max-width:1300px) {
     body {
-        background-size: 1200px;
+        background-size: 1300px;
     }
 
     .first__slide .first__slide--footer .footer__blog--link {
@@ -1261,12 +1286,28 @@
 
     .bcg__img {
         img {
-            max-width: 1270px;
+            max-width: 1300px;
         }
+    }
+
+    .ticket {
+        margin-top: 200px;
+    }
+
+    .Our__Facilities .slider__box .desc {
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .Our__Facilities .slider__box .desc2 {
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
     }
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1200px) {
     .third__slide--container {
         flex-wrap: wrap;
         justify-content: center;
@@ -1325,7 +1366,7 @@
 
     .first__slide .first__slide--footer .footer__photo--link2 {
         top: 1250px;
-        left: 300px;
+        left: 30px;
     }
 
     .second__slide .second__slide--header .weather {
@@ -1392,13 +1433,13 @@
     }
 
     .first__slide .first__slide--footer .footer__photo--link2 {
-        top: 830px;
-        left: 410px;
+        top: 860px;
+        left: 470px;
     }
 
     .bcg__img img {
-        max-width: 870px;
-        height: 500px;
+        max-width: 1000px;
+       
     }
 
     .bcg__img {
@@ -1633,9 +1674,10 @@
         margin: 20px;
         margin-top: 20px;
     }
-        .Our__Facilities{
-            margin-top: 100px;
-        }
+
+    .Our__Facilities {
+        margin-top: 100px;
+    }
 
     .first__slide .first__slide--footer .slide__footer--text {
         margin: 0;
@@ -1756,17 +1798,19 @@
         text-align: center;
         margin-left: 110px;
     }
-    .footer{
-margin-top: 100px;
+
+    .footer {
+        margin-top: 100px;
     }
 
     .mountain {
         background-size: 900px;
     }
 
-        .Our__Facilities .slider__box .desc2{
-            text-align: center;
-        }
+    .Our__Facilities .slider__box .desc2 {
+        text-align: center;
+    }
+
     .mountain .mountain__inner .map {
         margin-top: 230px;
         margin-right: 0;
@@ -1816,10 +1860,11 @@ margin-top: 100px;
     .footer .footer__down .copyright__info .Coockies {
         display: none;
     }
-        .Our__Facilities .slick-dots{
-            display: block;
 
-        }
+    .Our__Facilities .slick-dots {
+        display: block;
+
+    }
 }
 
 @media screen and (max-width:376px) {
@@ -1868,15 +1913,17 @@ margin-top: 100px;
         top: 720px;
         left: 60px;
     }
+
     .line {
-        svg{
+        svg {
             display: none;
         }
     }
-        .map1 img{
-            max-width: 350px;
-            margin: 0;
-        }
+
+    .map1 img {
+        max-width: 350px;
+        margin: 0;
+    }
 
     .second__slide {
         margin-top: 150px;
@@ -1893,9 +1940,10 @@ margin-top: 100px;
         min-height: 100px;
     }
 
-        .first__slide .first__slide--footer .slide__footer--photo{
-            margin-left: 15px;
-        }
+    .first__slide .first__slide--footer .slide__footer--photo {
+        margin-left: 15px;
+    }
+
     .second__slide .work__time .open {
         font-size: 30px;
     }
