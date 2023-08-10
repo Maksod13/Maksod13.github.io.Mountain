@@ -1488,8 +1488,13 @@
         left: 400px;
     }
 
+    .second__slide .second__slide--header .weather {
+        width: 600px;
+    }
+
     .second__slide .second__slide--header .weather .condition .condition__info .condition__info--title {
         font-size: 20px;
+
     }
 
     .second__slide .work__time .today .time {
@@ -1526,8 +1531,24 @@
 
     }
 
+    .second__slide .second__slide--header .weather {
+        max-width: 500px;
+    }
+
     .mountain {
         background-size: 1400px;
+    }
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        max-width: 300px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo2 {
+        max-width: 300px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo1 {
+        max-width: 300px;
     }
 
     .first__slide .first__slide--title .title__mountain {
@@ -1543,8 +1564,8 @@
     }
 
     .first__slide .first__slide--footer .footer__photo--link2 {
-        top: 1130px;
-        left: 220px;
+        top: 690px;
+        left: 400px;
     }
 
     .Our__Facilities .slick-dots {
@@ -1552,8 +1573,9 @@
     }
 
     .second__slide .second__slide--header .weather .condition .condition__info .condition__info--title {
-        font-size: 20px;
+        font-size: 30px;
     }
+
 
     .second__slide .work__time .today .time {
         font-size: 30px;
@@ -1640,15 +1662,18 @@
     }
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width:620px) {
     body {
         background-size: 610PX;
     }
+
+
 
     .third__slide--left .forecast__info {
         gap: 25px;
         justify-content: center;
     }
+
 
     .third__slide--left .left__title {
         justify-content: center;
@@ -1656,6 +1681,7 @@
 
     .first__slide .first__slide--footer {
         margin-left: 0;
+        justify-content: center;
     }
 
     .second__slide .second__slide--header .weather .second__slide--title {
