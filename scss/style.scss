@@ -1629,10 +1629,13 @@
     }
 
     .map1 img {
-        max-width: 400px;
-        margin: 10px;
+        max-width: 350px;
+        margin: 20px;
         margin-top: 20px;
     }
+        .Our__Facilities{
+            margin-top: 100px;
+        }
 
     .first__slide .first__slide--footer .slide__footer--text {
         margin: 0;
@@ -1750,13 +1753,20 @@
     }
 
     .ticket__inner .buy {
-        margin: 80px;
+        text-align: center;
+        margin-left: 110px;
+    }
+    .footer{
+margin-top: 100px;
     }
 
     .mountain {
-        background-size: 700px;
+        background-size: 900px;
     }
 
+        .Our__Facilities .slider__box .desc2{
+            text-align: center;
+        }
     .mountain .mountain__inner .map {
         margin-top: 230px;
         margin-right: 0;
@@ -1772,6 +1782,7 @@
 
     .ticket {
         margin-right: 0;
+        margin-top: 100px;
     }
 
     .footer .information__menu--title {
@@ -1805,6 +1816,10 @@
     .footer .footer__down .copyright__info .Coockies {
         display: none;
     }
+        .Our__Facilities .slick-dots{
+            display: block;
+
+        }
 }
 
 @media screen and (max-width:376px) {
@@ -1860,6 +1875,7 @@
     }
         .map1 img{
             max-width: 350px;
+            margin: 0;
         }
 
     .second__slide {
