@@ -1,0 +1,2004 @@
+@import "node_modules/normalize.css/normalize";
+@import "./wrapper";
+@import"./header.scss";
+@import"./footer.scss";
+@import"./fonts";
+
+.main__container {
+    display: flex;
+}
+
+.first__slide {
+    position: relative;
+
+
+    .first__slide--title {
+        text-align: center;
+
+
+        .title__beauty {
+            margin-top: 80px;
+            font-family: Cabinet Grotesk;
+            font-size: 53px;
+            font-style: normal;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            opacity: 0.7;
+            letter-spacing: 1.5px;
+        }
+
+        .title__mountain {
+            margin-top: -10px;
+            font-family: Cabinet Grotesk;
+            font-size: 156px;
+            font-style: normal;
+            font-weight: 800;
+            color: white;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+    }
+
+    .icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+
+        .first__slide--play {
+            text-align: center;
+            width: 136px;
+            height: 136px;
+            fill: rgba(255, 255, 255, 0.20);
+            border: 1px solid white;
+            stroke: rgba(255, 255, 255, 0.40);
+            border-radius: 50%;
+            padding-top: 30px;
+
+        }
+    }
+
+    .first__slide--footer {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+
+        .slide__footer--photo {
+            margin-top: 107px;
+            border-radius: 12px;
+            width: 304px;
+            height: 320px;
+            flex-shrink: 0;
+            background: url(../images/dist/Image\ \(1\).webp), lightgray -146.693px -54.208px / 213.345% 125.981% no-repeat;
+
+            .footer__photo--link {
+                color: var(--neutral-white, #FFF);
+                text-align: center;
+                margin-top: 200px;
+                margin-left: 32px;
+                /* Button/Button - 24 */
+                font-family: Cabinet Grotesk;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                svg {
+                    margin-top: 38px;
+                    margin-left: 10px;
+                }
+
+            }
+
+            .footer__photo--text {
+                color: var(--neutral-white, #FFF);
+                text-align: center;
+                margin-top: 210px;
+                /* Body/B - 18 */
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                /* 177.778% */
+            }
+        }
+
+        .slide__footer--text {
+            max-width: 507px;
+            min-height: 96px;
+            margin-left: 48px;
+            margin-top: 178px;
+
+            .footer__text--title {
+
+                color: var(--neutral-white, #FFF);
+                /* Sub Heading/SH - 56 */
+                font-family: Cabinet Grotesk;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 64px;
+                /* 114.286% */
+
+            }
+
+            .footer__text--subtitle {
+                color: var(--primary-cyan, #16F1FF);
+                margin-top: 24px;
+                margin-bottom: 24px;
+                /* Sub Heading/SH - 32 */
+                font-family: Inter;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            .footer__text--main {
+                color: var(--neutral-white, #FFF);
+
+                /* Body/B - 18 */
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                /* 177.778% */
+            }
+        }
+
+        /* Стили для блока .footer__blog--link */
+        .footer__blog--link {
+            max-width: 528px;
+            min-height: 243px;
+            position: relative;
+            left: 370px;
+            top: 148px;
+            /* Устанавливаем позиционирование, чтобы дочерние элементы с абсолютным позиционированием располагались относительно этого блока */
+        }
+
+        /* Стили для блока .blog__photo1 */
+        .blog__photo1 {
+            position: relative;
+            /* Устанавливаем относительное позиционирование */
+        }
+
+        /* Стили для блока .blog__photo2 */
+        .blog__photo2 {
+            position: absolute;
+            top: 95px;
+            left: 0;
+            width: 100%;
+            height: 35%;
+        }
+
+        /* Стили для блока .footer__photo--link */
+        .footer__photo--link2 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: var(--neutral-white, #FFF);
+            text-align: center;
+            font-family: Cabinet Grotesk;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            svg {
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+    .line {
+        position: relative;
+        margin-left: -10px;
+
+        svg {
+            position: absolute;
+            top: 878px;
+            left: -11px;
+        }
+
+        .first__slide--line {
+            width: 1.5px;
+            height: 717px;
+            border-left: 1px solid floralwhite;
+
+        }
+
+        .scroll {
+            position: absolute;
+            left: -100px;
+            top: 750px;
+            color: var(--neutral-white, #FFF);
+            font-family: Cabinet Grotesk;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transform: rotate(-90deg);
+            width: 200px;
+
+        }
+    }
+}
+
+
+// Второй слайд
+.second__slide {
+    margin-top: 264px;
+
+    .second__slide--header {
+        display: flex;
+        justify-content: space-between;
+
+        .weather {
+            max-width: 628px;
+            min-height: 256px;
+            margin-top: 50px;
+
+            .second__slide--title {
+                color: var(--neutral-white, #FFF);
+                font-family: Cabinet Grotesk;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 84px;
+            }
+
+            .condition {
+                display: inline-flex;
+                gap: 43px;
+                margin-top: 33px;
+
+
+                .condition__desc {
+                    color: rgba(255, 255, 255, 0.60);
+                    font-family: Inter;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .condition__info {
+                    display: flex;
+
+                    .condition__info--title {
+                        color: var(--neutral-white, #FFF);
+                        font-family: Cabinet Grotesk;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 56px;
+                        align-items: baseline;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .work__time {
+        width: 512px;
+        min-height: 352px;
+
+        .open {
+            height: 104px;
+            background-color: #11327B;
+            color: var(--neutral-white, #FFF);
+            font-family: Cabinet Grotesk;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            padding: 24px 48px;
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        .today {
+            margin-top: 22px;
+            display: flex;
+            padding: 0px 48px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 14px;
+            align-self: stretch;
+
+            .open__today {
+                color: rgba(255, 255, 255, 0.70);
+
+                /* Sub Heading/SH - 20 */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 140% */
+            }
+
+            .time {
+                color: var(--neutral-white, #FFF);
+
+                /* Sub Heading/SH - 40 */
+                font-family: Cabinet Grotesk;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 56px;
+                /* 140% */
+            }
+        }
+
+        .work__time--schedule {
+            color: var(--primary-cyan, #16F1FF);
+            font-family: Cabinet Grotesk;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 24px 48px;
+            margin-top: 50px;
+
+            svg {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+
+// Третий слайд
+.third__slide {
+    margin-top: 204px;
+    background-color: #020e20;
+}
+
+.third__slide--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third__slide--left {
+    padding-top: 100px;
+    max-width: 670px;
+    min-height: 535px;
+
+    .left__title {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .left__title--day {
+            width: 170px;
+            height: 88px;
+            background-color: #2AEF84;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 16px;
+            color: var(--neutral-black, #020E20);
+            font-family: Cabinet Grotesk;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+        }
+
+        .left__title--forecast {
+            color: var(--neutral-white, #FFF);
+
+            /* Sub Heading/SH - 40 */
+            font-family: Cabinet Grotesk;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            /* 140% */
+        }
+    }
+
+    .forecast__info {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        margin-top: 63px;
+
+        .forecast__info--deg {
+            display: flex;
+
+            .info__deg--temp {
+                color: var(--neutral-white, #FFF);
+                margin-left: 10px;
+                /* Sub Heading/SH - 56 */
+                font-family: Cabinet Grotesk;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 64px;
+                /* 114.286% */
+            }
+        }
+
+        .forecast__info--day {
+            color: var(--neutral-white, #FFF);
+            margin-top: 20px;
+            /* Sub Heading/SH - 32 */
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .slide__left--text {
+        color: var(--neutral-white, #FFF);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 68px;
+
+    }
+
+    .third__slide--right {
+        width: 779px;
+        height: 717px;
+    }
+}
+
+//  Четвертый слайд
+.Our__Facilities {
+    margin-top: 195px;
+
+    .Facilities__header--left {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .Facilities__header--title {
+            color: rgba(255, 255, 255, 0.60);
+
+            /* Sub Heading/SH - 32 */
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .Facilities__header--subtitle {
+            color: var(--neutral-white, #FFF);
+            margin-top: 2px;
+            /* Sub Heading/SH - 72 */
+            font-family: Cabinet Grotesk;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 84px;
+            /* 116.667% */
+        }
+    }
+
+    .slider {
+        display: flex;
+
+    }
+
+
+
+    .slider__box {
+        margin-top: 168px;
+        width: 530px;
+        height: 550px;
+        border-radius: 12px 0px 0px 12px;
+        background: var(--neutral-dark, #152742);
+        flex: 1;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+
+        .photo {
+            display: flex;
+            justify-content: space-between;
+
+            .number {
+                color: rgba(255, 255, 255, 0.20);
+                font-family: Cabinet Grotesk;
+                font-size: 120px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding-top: 50px;
+                padding-left: 48px;
+            }
+        }
+
+        .desc {
+            color: var(--neutral-white, #FFF);
+            margin-top: 25px;
+            margin-left: 48px;
+            /* Sub Heading/SH - 72 */
+            font-family: Cabinet Grotesk;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 84px;
+            /* 116.667% */
+        }
+
+        .desc2 {
+            color: var(--neutral-white, #FFF);
+            margin-top: 25px;
+            margin-left: 48px;
+            /* Sub Heading/SH - 72 */
+            font-family: Cabinet Grotesk;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 84px;
+            /* 116.667% */
+        }
+
+        .details {
+            color: var(--neutral-white, #FFF);
+            text-align: center;
+            margin-top: 15px;
+            margin-left: -252px;
+            /* Button/Button - 24 */
+            font-family: Cabinet Grotesk;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            svg {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .slider__box.active {
+        transform: scaleY(1.2);
+        height: 580px;
+
+        img {
+            width: 270px;
+            height: 270px
+        }
+
+        .number {
+            padding-top: 30px;
+            color: rgba(255, 255, 255, 0.20);
+            font-family: Cabinet Grotesk;
+            font-size: 115px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .desc {
+            color: var(--neutral-white, #FFF);
+            margin-top: 50px;
+            /* Sub Heading/SH - 72 */
+            font-family: Cabinet Grotesk;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 65px;
+            /* 116.667% */
+        }
+    }
+
+    .prev-button {
+        background-color: transparent;
+        margin-top: 35px;
+        margin-right: 40px;
+    }
+
+    .next-button {
+        background-color: transparent;
+        margin-right: -10px;
+    }
+
+    .slick-dots {
+        display: flex;
+        font-size: 0;
+        position: absolute;
+        left: 1240px;
+        top: -67px;
+
+        button {
+            background-color: transparent;
+            width: 40px;
+        }
+
+        .slick-active button {
+            background-color: #52FFE0;
+        }
+    }
+}
+
+// Пятый слайд
+.mountain {
+    margin-top: 227px;
+    background: url(../images/dist/Image\ \(4\).webp);
+    min-height: 854px;
+
+    .mountain__inner {
+        display: flex;
+        gap: 180px;
+
+
+        .map {
+            margin-top: 327px;
+            position: relative;
+            display: flex;
+            display: inline-flex;
+            padding: 16px;
+            align-items: center;
+            gap: 16px;
+            width: 250px;
+            height: 98px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(16px);
+
+            .map__img {
+                svg {
+                    position: absolute;
+                    top: 40px;
+                    left: 40px;
+                }
+            }
+
+            .map__name {
+                color: var(--neutral-white, #FFF);
+
+                /* Sub Heading/SH - 20 */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 140% */
+            }
+        }
+
+
+
+        .mountain__info--box {
+            margin-left: 89px;
+            margin-top: 250px;
+            width: 313px;
+            height: 346px;
+            display: inline-flex;
+            padding: 24px;
+            flex-direction: column;
+
+            align-items: flex-start;
+            gap: 16px;
+            border: 1px solid white;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(16px);
+
+
+            .info__box--day {
+                color: var(--neutral-white, #FFF);
+
+                /* Sub Heading/SH - 20 */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 140% */
+            }
+
+            .info__box--desc {
+                display: flex;
+                padding: 4px 8px;
+                align-items: flex-start;
+                gap: 76px;
+                border-radius: 8px;
+                background: var(--neutral-dark-blue, #11327B);
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 55px;
+                    /* Отступ сверху */
+                    width: 265px;
+                    /* Ширина линии */
+                    height: 1px;
+                    background-color: white;
+                }
+
+                .info__box--time {
+                    color: var(--neutral-white, #FFF);
+
+                    /* Sub Heading/SH - 24 */
+                    font-family: Cabinet Grotesk;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    /* 133.333% */
+                }
+
+                .info__box--deg {
+                    display: flex;
+                    color: var(--neutral-white, #FFF);
+                    font-family: Cabinet Grotesk;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    /* 133.333% */
+                }
+            }
+
+            .info__box--distance {
+                color: var(--neutral-white, #FFF);
+                margin-top: 15px;
+                /* Sub Heading/SH - 20 */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 140% */
+            }
+
+            .info__box--km {
+                color: var(--neutral-white, #FFF);
+                margin-top: 10px;
+                /* Sub Heading/SH - 32 */
+                font-family: Inter;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 54px;
+                    /* Отступ сверху */
+                    width: 265px;
+                    /* Ширина линии */
+                    height: 1px;
+                    background-color: white;
+                }
+            }
+
+            .box__height--title {
+                color: var(--neutral-white, #FFF);
+                margin-top: 15px;
+                /* Sub Heading/SH - 20 */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 140% */
+            }
+
+            .box__height--km {
+                color: var(--neutral-white, #FFF);
+                margin-top: 8px;
+                /* Sub Heading/SH - 32 */
+                font-family: Inter;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+            }
+        }
+
+        .mountain__about {
+            max-width: 536px;
+            margin-top: 186px;
+
+            .about {
+                color: rgba(255, 255, 255, 0.60);
+                font-family: Cabinet Grotesk;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 48px;
+                /* 150% */
+            }
+
+            .mountain__about--title {
+                color: var(--neutral-white, #FFF);
+
+                /* Sub Heading/SH - 72 */
+                font-family: Cabinet Grotesk;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 84px;
+                /* 116.667% */
+            }
+
+            .mountain__about--text {
+                color: var(--neutral-white, #FFF);
+                margin-top: 38px;
+                /* Body/B - 18 */
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                /* 177.778% */
+            }
+
+            .mountain__about--link {
+                display: flex;
+                color: var(--primary-cyan, #16F1FF);
+                text-align: center;
+
+                /* Button/Button - 24 */
+                font-family: Cabinet Grotesk;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 32px;
+
+                svg {
+                    margin-left: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.ticket {
+    background: #06516e;
+    max-width: 1585px;
+    height: 560px;
+    margin-top: 310px;
+    margin-left: 170px;
+    position: relative;
+}
+
+.bcg__img {
+    position: absolute;
+    top: -160px;
+    left: 0;
+    max-width: 1585px;
+    height: 100%;
+    z-index: 1;
+}
+
+.ticket__inner {
+    max-width: 378px;
+    margin-left: 95px;
+    padding-top: 73px;
+
+    .ticket__inner--title {
+        color: rgba(255, 255, 255, 0.60);
+
+        /* Sub Heading/SH - 32 */
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .ticket__inner--name {
+        color: var(--neutral-white, #FFF);
+
+        /* Sub Heading/SH - 72 */
+        font-family: Cabinet Grotesk;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 84px;
+        /* 116.667% */
+    }
+
+    .ticket__inner--text {
+        color: var(--neutral-white, #FFF);
+        margin-top: 14px;
+        /* Body/B - 18 */
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        /* 177.778% */
+    }
+
+    .buy {
+        margin-top: 48px;
+        width: 187px;
+        height: 48px;
+        display: flex;
+        padding: 8px 16px 8px 8px;
+        align-items: flex-start;
+        gap: 16px;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.40);
+        backdrop-filter: blur(16px);
+
+        .icon {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background: var(--neutral-white, #FFF);
+            backdrop-filter: blur(12px);
+        }
+
+        .buy__info {
+            color: var(--neutral-white, #FFF);
+
+            /* Button/Button - 24 */
+            font-family: Cabinet Grotesk;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
+.footer {
+    margin-top: 208px;
+
+    .footer__container--inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__inner--info {
+        max-width: 471px;
+
+        .inner__info--title {
+            display: flex;
+            padding-top: 2px;
+
+            .info__title--title {
+                color: var(--neutral-white, #FFF);
+                font-family: Cabinet Grotesk;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-left: 9px;
+            }
+
+        }
+
+        .footer__inner--text {
+            color: var(--neutral-grey, #A4AAC1);
+            margin-top: 25px;
+            /* Body/B - 18 */
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 177.778% */
+        }
+
+        .footer__inner--icon {
+            margin-left: 13px;
+            margin-top: 35px;
+
+            a {
+                margin-right: 43px;
+            }
+        }
+
+    }
+
+    .information__menu--title {
+        color: var(--neutral-white, #FFF);
+
+        /* Sub Heading/SH - 20 */
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        /* 140% */
+    }
+
+    .information__menu--list {
+        margin-top: 25px;
+
+        .information__menu--item {
+            color: var(--neutral-grey, #A4AAC1);
+            margin-bottom: 12px;
+            /* Body/B - 18 */
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 177.778% */
+        }
+    }
+
+    .line {
+        margin-top: 50px;
+        border-bottom: 1px solid white;
+    }
+
+    .footer__down {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 46px;
+        margin-left: 4px;
+
+        .copyright {
+            color: var(--neutral-grey, #A4AAC1);
+
+            /* Body/B - 18 */
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 177.778% */
+        }
+
+        .copyright__info {
+            display: flex;
+            gap: 28px;
+
+            .terms {
+                color: var(--neutral-grey, #A4AAC1);
+
+                /* Body/B - 18 */
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                /* 177.778% */
+
+            }
+
+            .Privacy {
+                color: var(--neutral-grey, #A4AAC1);
+
+                /* Body/B - 18 */
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                /* 177.778% */
+            }
+
+            .Coockies {
+                color: var(--neutral-grey, #A4AAC1);
+
+                /* Body/B - 18 */
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                /* 177.778% */
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1700px) {
+    .container__first--slider {
+
+        margin-left: 0;
+    }
+
+    .first__slide .line {
+        margin-left: 30px;
+    }
+
+    .first__slide .first__slide--footer {
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        position: absolute;
+        left: 1150px;
+        top: 650px;
+
+    }
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        position: static;
+    }
+
+    .first__slide .first__slide--footer .blog__photo1 {
+        position: static;
+        margin-top: 150px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo2 {
+        position: static;
+        margin-top: -150px;
+    }
+
+    .ticket {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    body {
+        background-size: 1600px;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        left: 1000px;
+    }
+
+    .bcg__img {
+        img {
+            max-width: 1460px;
+        }
+
+    }
+
+    .Our__Facilities .slick-dots {
+        left: 1100px;
+    }
+
+    .ticket {
+        margin: 30px;
+
+        margin-top: 310px;
+    }
+}
+
+
+
+@media screen and (max-width:1500px) {
+    body {
+        background-size: 1500px;
+    }
+
+    .ticket {
+        margin-left: 0;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        left: 920px;
+    }
+
+    .Our__Facilities .slick-dots {
+        left: 900px;
+    }
+
+    .bcg__img {
+        width: 100%;
+        left: -100px;
+
+        img {
+            max-width: 1540px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        background-size: 1200px;
+    }
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        max-width: 400px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo1 {
+        max-width: 400px;
+    }
+
+
+    .first__slide .first__slide--footer .slide__footer--text {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        left: 800px;
+        top: 830px;
+    }
+
+    .third__slide--left {
+        padding-top: 0;
+    }
+
+    .map1 {
+        img {
+            max-width: 500px;
+        }
+
+    }
+
+    .Our__Facilities .slick-dots {
+        left: 800px;
+    }
+
+
+    .mountain .mountain__inner {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .mountain .mountain__inner .mountain__info--box {
+        margin-left: 0;
+    }
+
+    .Our__Facilities .slider__box .details {
+        margin-left: 0;
+    }
+
+    .bcg__img {
+        img {
+            max-width: 1270px;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .third__slide--container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .mountain {
+        background-repeat: no-repeat;
+    }
+
+    .mountain .mountain__inner {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mountain .mountain__inner .map {
+        margin-right: 50px;
+    }
+
+    .bcg__img {
+        top: 0;
+
+        img {
+
+            max-width: 1200px;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .header .header__inner .menu__list {
+        gap: 20px;
+    }
+
+    .bcg__img {
+        top: 0;
+
+        img {
+
+            max-width: 1100px;
+        }
+    }
+
+    .first__slide .first__slide--footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        max-width: 500px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo1 {
+        max-width: 500px;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        top: 1250px;
+        left: 300px;
+    }
+
+    .second__slide .second__slide--header .weather {
+        margin-top: 0;
+    }
+
+    .second__slide .second__slide--header .weather .condition {
+        gap: 0;
+    }
+
+    .Our__Facilities .slick-dots {
+        left: 600px;
+    }
+
+    .header .burger {
+        display: flex;
+    }
+
+    .header .header__inner .menu__list {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        background-color: #1D1E22;
+        row-gap: 30px;
+    }
+
+    .header .header__inner .header__inner--logotube {
+        display: none;
+
+    }
+
+    .first__slide .first__slide--footer {
+        align-items: center;
+    }
+
+    .first__slide .first__slide--footer .slide__footer--photo {
+        order: 1;
+    }
+
+    .first__slide .first__slide--footer .slide__footer--text {
+        order: 3;
+        margin-top: 50px;
+    }
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        order: 2;
+        margin-left: 15px;
+    }
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        max-width: 450px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo1 {
+        max-width: 450px;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        top: 830px;
+        left: 410px;
+    }
+
+    .bcg__img img {
+        max-width: 870px;
+        height: 500px;
+    }
+
+    .bcg__img {
+        top: -50px;
+        left: 0;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        background-size: 800px;
+
+    }
+
+    .mountain {
+        background-size: 1400px;
+    }
+
+    .first__slide .first__slide--title .title__mountain {
+        font-size: 100px;
+    }
+
+    .first__slide .first__slide--footer .slide__footer--photo {
+        max-width: 300px;
+    }
+
+    .first__slide .first__slide--footer .slide__footer--photo .footer__photo--link {
+        margin-left: 0;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        top: 1130px;
+        left: 220px;
+    }
+
+    .Our__Facilities .slick-dots {
+        display: none;
+    }
+
+    .second__slide .second__slide--header .weather .condition .condition__info .condition__info--title {
+        font-size: 20px;
+    }
+
+    .second__slide .work__time .today .time {
+        font-size: 30px;
+    }
+
+    .ticket {
+        background-color: transparent;
+    }
+
+    .ticket__inner {
+        margin-left: 0;
+    }
+
+    .bcg__img img {
+        max-width: 770px;
+        height: auto;
+    }
+
+    .bcg__img {
+        top: 100px;
+    }
+
+    .footer .footer__inner--info {
+        max-width: 300px;
+    }
+
+    .Our__Facilities .slider__box .photo .number {
+        font-size: 50px;
+    }
+
+    .map1 img {
+        margin: 40px;
+    }
+
+    .Our__Facilities .slider__box .desc {
+        font-size: 40px;
+    }
+
+    .Our__Facilities .slider__box.active .desc {
+        font-size: 40px;
+    }
+
+    .Our__Facilities .slider__box .desc2 {
+        font-size: 35px;
+        line-height: 70px;
+        margin-left: 0;
+        margin-top: 35px;
+    }
+
+
+    .Our__Facilities .slider__box.active img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        top: 1150px;
+        left: 180px;
+    }
+
+    .second__slide .second__slide--header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .Our__Facilities .slick-dots {
+        display: none;
+    }
+
+    .bcg__img img {
+        max-width: 600px;
+        height: auto;
+    }
+
+    .footer .footer__container--inner {
+        flex-wrap: wrap;
+    }
+
+    .Our__Facilities .slick-dots button {
+        display: none;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .first__slide .first__slide--title .title__beauty {
+        font-size: 30px;
+    }
+
+    .first__slide .first__slide--title .title__mountain {
+        font-size: 70px;
+    }
+
+    .third__slide--container {
+        justify-content: flex-start;
+    }
+
+    .mountain {
+        background-size: 1200px;
+
+    }
+
+    .mountain .mountain__inner .mountain__info--box {
+        margin-top: 100px;
+    }
+
+    .mountain .mountain__inner .mountain__about {
+        margin-top: 100px;
+    }
+
+    .bcg__img {
+        top: 400px;
+
+        img {
+            max-width: 550px;
+
+        }
+    }
+
+    .ticket__inner {
+        text-align: center;
+        max-width: 550px;
+    }
+
+    .third__slide--left {
+        max-width: 400px;
+    }
+
+    .third__slide--left .forecast__info {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    body {
+        background-size: 430px;
+    }
+
+    .first__slide {
+        text-align: center;
+    }
+
+    .first__slide .first__slide--footer {
+        margin-left: 0;
+    }
+
+    .first__slide .first__slide--title {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .first__slide .first__slide--title .title__beauty {
+        margin-top: 20px;
+        font-size: 35px;
+    }
+
+    .first__slide .icon {
+        display: none;
+    }
+
+    .first__slide .first__slide--title .title__mountain {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        margin-left: 0;
+    }
+
+    .first__slide .first__slide--footer .blog__photo1 {
+        max-width: 300px;
+        margin-top: 100px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo2 {
+        max-width: 300px;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        top: 750px;
+        left: 90px;
+    }
+
+    .map1 img {
+        max-width: 400px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    .first__slide .first__slide--footer .slide__footer--text {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .first__slide .first__slide--footer .slide__footer--text .footer__text--title {
+        font-size: 40px;
+    }
+
+    .first__slide .first__slide--footer .slide__footer--text .footer__text--subtitle {
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    .first__slide .line {
+        margin-left: 10px;
+    }
+
+    .second__slide {
+        margin-top: 150px;
+    }
+
+    .second__slide .second__slide--header .weather .second__slide--title {
+        font-size: 35px;
+        line-height: normal;
+        text-align: center;
+    }
+
+
+    .second__slide .second__slide--header .weather {
+        min-height: 100px;
+    }
+
+    .second__slide .work__time .open {
+        font-size: 30px;
+    }
+
+    .third__slide--left .left__title {
+        justify-content: center;
+    }
+
+    .third__slide--left .forecast__info {
+        justify-content: center;
+    }
+
+    .third__slide {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .third__slide--left {
+        padding-top: 0;
+    }
+
+    .third__slide--left .forecast__info .forecast__info--deg .info__deg--temp {
+        font-size: 35px;
+    }
+
+    .third__slide--left .forecast__info .forecast__info--day {
+        font-size: 20px;
+    }
+
+    .third__slide--left .forecast__info {
+        gap: 5px;
+    }
+
+    .map img {
+        max-width: 300px;
+    }
+
+    .Our__Facilities .next-button {
+        display: none;
+    }
+
+    .Our__Facilities .prev-button {
+        display: none;
+    }
+
+    .Our__Facilities .slider__box .desc {
+        text-align: center;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .Our__Facilities .slider__box .details svg {
+        margin-left: 0;
+    }
+
+    .slick-slide img {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .Our__Facilities .slider__box .photo .number {
+        font-size: 70px;
+        padding-left: 20px;
+    }
+
+    .Our__Facilities .slider__box .desc {
+        margin-top: 100;
+    }
+
+    .Our__Facilities .Facilities__header--left {
+        text-align: center;
+    }
+
+    .Our__Facilities .slider__box {
+        margin-top: 50px;
+    }
+
+    .bcg__img img {
+
+        display: none;
+    }
+
+    .ticket__inner .buy {
+        margin: 80px;
+    }
+
+    .mountain {
+        background-size: 700px;
+    }
+
+    .mountain .mountain__inner .map {
+        margin-top: 230px;
+        margin-right: 0;
+    }
+
+    .mountain .mountain__inner .mountain__about {
+        text-align: center;
+    }
+
+    .mountain .mountain__inner .mountain__about .mountain__about--link {
+        justify-content: center;
+    }
+
+    .ticket {
+        margin-right: 0;
+    }
+
+    .footer .information__menu--title {
+        font-size: 15px;
+    }
+
+    .footer .information__menu--list .information__menu--item {
+        font-size: 13px;
+    }
+
+    .footer .footer__container--inner {
+        gap: 30px;
+    }
+
+    .footer .footer__inner--info {
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .footer .footer__inner--info .inner__info--title {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .footer__inner--info .footer__inner--icon {
+        margin-left: 45px;
+    }
+
+
+
+    .footer .footer__down .copyright__info .Coockies {
+        display: none;
+    }
+}
+
+@media screen and (max-width:376px) {
+    body {
+        background-size: 380px;
+    }
+
+    .first__slide {
+        text-align: center;
+    }
+
+    .first__slide .first__slide--title {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .first__slide .first__slide--title .title__beauty {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .first__slide .icon {
+        display: none;
+    }
+
+    .first__slide .first__slide--title .title__mountain {
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+
+    .first__slide .first__slide--footer .footer__blog--link {
+        margin-left: 15px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo1 {
+        max-width: 300px;
+        margin-top: 100px;
+    }
+
+    .first__slide .first__slide--footer .blog__photo2 {
+        max-width: 300px;
+    }
+
+    .first__slide .first__slide--footer .footer__photo--link2 {
+        top: 720px;
+        left: 60px;
+    }
+    .line {
+        svg{
+            display: none;
+        }
+    }
+        .map1 img{
+            max-width: 350px;
+        }
+
+    .second__slide {
+        margin-top: 150px;
+    }
+
+    .second__slide .second__slide--header .weather .second__slide--title {
+        font-size: 35px;
+        line-height: normal;
+        text-align: center;
+    }
+
+
+    .second__slide .second__slide--header .weather {
+        min-height: 100px;
+    }
+
+        .first__slide .first__slide--footer .slide__footer--photo{
+            margin-left: 15px;
+        }
+    .second__slide .work__time .open {
+        font-size: 30px;
+    }
+
+    .third__slide {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .third__slide--left {
+        padding-top: 0;
+    }
+
+    .third__slide--left .forecast__info .forecast__info--deg .info__deg--temp {
+        font-size: 35px;
+    }
+
+    .third__slide--left .forecast__info .forecast__info--day {
+        font-size: 20px;
+    }
+
+    .third__slide--left .forecast__info {
+        gap: 5px;
+    }
+
+    .map img {
+        max-width: 300px;
+    }
+
+    .Our__Facilities .next-button {
+        display: none;
+    }
+
+    .Our__Facilities .prev-button {
+        display: none;
+    }
+
+    .slick-slide img {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .Our__Facilities .slider__box .photo .number {
+        font-size: 70px;
+        padding-left: 20px;
+    }
+
+    .Our__Facilities .slider__box .desc {
+        margin-top: 100;
+    }
+
+    .Our__Facilities .Facilities__header--left {
+        text-align: center;
+    }
+
+    .Our__Facilities .slider__box {
+        margin-top: 50px;
+    }
+
+    .bcg__img img {
+
+        display: none;
+    }
+
+    .ticket__inner .buy {
+        margin: 80px;
+    }
+
+    .mountain {
+        background-size: 700px;
+    }
+
+    .mountain .mountain__inner .map {
+        margin-top: 230px;
+        margin-right: 0;
+    }
+
+    .mountain .mountain__inner .mountain__about {
+        text-align: center;
+    }
+
+    .mountain .mountain__inner .mountain__about .mountain__about--link {
+        justify-content: center;
+    }
+
+    .ticket {
+        margin-right: 0;
+        margin-top: 100px;
+    }
+
+    .footer .information__menu--title {
+        font-size: 15px;
+    }
+
+    .footer .information__menu--list .information__menu--item {
+        font-size: 13px;
+    }
+
+    .footer .footer__container--inner {
+        gap: 30px;
+    }
+
+    .footer .footer__inner--info {
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .footer .footer__inner--info .inner__info--title {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .footer__inner--info .footer__inner--icon {
+        margin-left: 45px;
+    }
+
+
+
+    .footer .footer__down .copyright__info .Coockies {
+        display: none;
+    }
+}

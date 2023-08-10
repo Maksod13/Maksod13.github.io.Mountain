@@ -1,0 +1,164 @@
+.header {
+    margin-top: 32px;
+
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .inner__title {
+            color: var(--neutral-white, #FFF);
+            font-family: Cabinet Grotesk;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 5px;
+        }
+
+        .menu__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 49px;
+            margin-left: 2px;
+
+
+            li {
+                position: relative;
+                color: var(--white, #FFF);
+                /* Body/B - 18 */
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+
+                /* 177.778% */
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 57px;
+                    bottom: 0;
+                    left: 63%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 0;
+                    background-color: #FFF;
+                    opacity: 0;
+                    transition: width 0.3s, height 0.3s, opacity 0.3s;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    /* Увеличиваем элемент при hover */
+
+                    &::after {
+                        width: 70px;
+                        /* Ширина линии */
+                        height: 8px;
+                        /* Высота линии */
+                        opacity: 1;
+                        /* Показываем линию */
+                    }
+                }
+            }
+        }
+
+        .header__inner--logotube {
+            display: flex;
+            width: 157px;
+            height: 48px;
+            display: flex;
+            padding: 8px 16px 8px 8px;
+            align-items: flex-start;
+            gap: 16px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.40);
+            backdrop-filter: blur(16px);
+
+            .logotube__svg {
+                display: flex;
+                width: 32px;
+                height: 32px;
+                padding: 8px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                background: var(--neutral-white, #FFF);
+                backdrop-filter: blur(12px);
+            }
+
+            .logotube__text {
+                color: var(--neutral-white, #FFF);
+                /* Sub Heading/SH - 20 */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                /* 140% */
+            }
+        }
+
+    }
+
+    .header__inner--line {
+        width: 100%;
+        border-bottom: 1px solid #FFF;
+        margin-top: 32px;
+    }
+
+    .burger {
+        display: none;
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        justify-content: flex-end;
+        width: 27px;
+        height: 20px;
+
+        span {
+
+            height: 2px;
+            width: 100%;
+            transform: scale(1);
+            background-color: #FFFFFF;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #FFFFFF;
+            transition: all 0.3s ease 0s;
+        }
+
+        &::before {
+            top: 2px;
+        }
+
+        &::after {
+            bottom: -1px;
+        }
+
+        &.active span {
+            transform: scale(0);
+        }
+
+        &.active::before {
+            top: 41%;
+            transform: rotate(-45deg);
+            transform-origin: center;
+        }
+
+        &.active::after {
+            bottom: 48%;
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+    }
+
+}

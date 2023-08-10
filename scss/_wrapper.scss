@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020e20;
+    background-image: url('../images/src/Mountain Image.png'), url('../images/src/Image.png');
+    background-repeat: no-repeat, no-repeat;
+
+
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+p {
+    margin: 0;
+    margin-block: 0;
+}
+
+.main__container {
+    max-width: 1725px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container__first--slider {
+    width: 1612px;
+    margin-left: 53px;
+
+}
+
+.container {
+    max-width: 1612px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.open {
+    display: flex !important;
+}
