@@ -1523,6 +1523,10 @@
         max-width: 800px;
     }
 
+    .Our__Facilities .slick-dots button {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -1531,8 +1535,12 @@
 
     }
 
+    .first__slide .first__slide--footer {
+        justify-content: center;
+    }
+
     .second__slide .second__slide--header .weather {
-        max-width: 500px;
+        max-width: 350px;
     }
 
     .mountain {
@@ -1565,10 +1573,10 @@
 
     .first__slide .first__slide--footer .footer__photo--link2 {
         top: 690px;
-        left: 400px;
+        left: 420px;
     }
 
-    .Our__Facilities .slick-dots {
+    .Our__Facilities .slick-dots button {
         display: none;
     }
 
