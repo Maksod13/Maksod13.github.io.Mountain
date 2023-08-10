@@ -1201,7 +1201,7 @@
         left: -100px;
 
         img {
-            max-width: 1540px;
+            max-width: 1520px;
         }
     }
 
@@ -1211,17 +1211,20 @@
 }
 
 @media screen and (max-width:1400px) {
-    .ticket{
+    .ticket {
         margin-top: 200px;
     }
-        .third__slide--container{
-            justify-content: flex-start;
-        }
-    .map1{
-        img{
+
+    .third__slide--container {
+        justify-content: flex-start;
+    }
+
+    .map1 {
+        img {
             max-width: 700px;
         }
     }
+
     .bcg__img {
         left: 0;
 
@@ -1439,7 +1442,7 @@
 
     .bcg__img img {
         max-width: 1000px;
-       
+
     }
 
     .bcg__img {
@@ -1569,6 +1572,16 @@
     }
 }
 
+@media screen and (max-width:610px) {
+    .third__slide--left .forecast__info {
+        gap: 25px;
+        justify-content: center;
+    }
+        .third__slide--left .left__title{
+            justify-content: center;
+        }
+}
+
 @media screen and (max-width:560px) {
     .first__slide .first__slide--title .title__beauty {
         font-size: 30px;
@@ -1609,18 +1622,22 @@
         max-width: 550px;
     }
 
-    .third__slide--left {
-        max-width: 400px;
-    }
 
     .third__slide--left .forecast__info {
         gap: 20px;
     }
+        .first__slide .first__slide--footer .footer__photo--link2{
+            top: 1020px;
+            left: 100px;
+        }
+                .map1 img{
+                    margin: 0;
+                }
 }
 
 @media screen and (max-width:440px) {
     body {
-        background-size: 430px;
+        background-size: 440px;
     }
 
     .first__slide {
