@@ -584,7 +584,7 @@
             line-height: normal;
         }
 
-        .desc {
+        .desc2 {
             color: var(--neutral-white, #FFF);
             margin-top: 50px;
             /* Sub Heading/SH - 72 */
@@ -628,13 +628,13 @@
 
 // Пятый слайд
 .mountain {
-    margin-top: 227px;
+    margin-top: 200px;
     background: url(../images/dist/Image\ \(4\).webp);
     min-height: 854px;
 
     .mountain__inner {
         display: flex;
-        gap: 180px;
+        gap: 179px;
 
 
         .map {
@@ -675,12 +675,12 @@
 
 
         .mountain__info--box {
-            margin-left: 89px;
-            margin-top: 250px;
+            margin-left: 91px;
+            margin-top: 248px;
             width: 313px;
             height: 346px;
             display: inline-flex;
-            padding: 24px;
+            padding: 25px;
             flex-direction: column;
 
             align-items: flex-start;
@@ -743,7 +743,7 @@
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 32px;
+                    line-height: 27px;
                     /* 133.333% */
                 }
             }
@@ -837,7 +837,7 @@
 
             .mountain__about--text {
                 color: var(--neutral-white, #FFF);
-                margin-top: 38px;
+                margin-top: 35px;
                 /* Body/B - 18 */
                 font-family: Poppins;
                 font-size: 18px;
@@ -1527,6 +1527,13 @@
         display: none;
     }
 
+    .Our__Facilities .slider__box .desc2 {
+        font-size: 35px;
+        line-height: 70px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -1581,9 +1588,18 @@
     }
 
     .second__slide .second__slide--header .weather .condition .condition__info .condition__info--title {
-        font-size: 30px;
+        font-size: 20px;
     }
 
+    .second__slide .second__slide--header .weather .condition {
+        align-items: center;
+    }
+
+
+    .second__slide .work__time .today {
+        justify-content: center;
+        align-items: center;
+    }
 
     .second__slide .work__time .today .time {
         font-size: 30px;
@@ -1626,11 +1642,20 @@
         font-size: 40px;
     }
 
+    .second__slide .work__time .open {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second__slide .work__time .work__time--schedule {
+        padding-left: 100px;
+    }
+
     .Our__Facilities .slider__box .desc2 {
         font-size: 35px;
         line-height: 70px;
         margin-left: 0;
-        margin-top: 35px;
+        margin-top: 10px;
     }
 
 
@@ -1676,6 +1701,9 @@
     }
 
 
+    .second__slide .work__time .work__time--schedule {
+        padding-left: 150px;
+    }
 
     .third__slide--left .forecast__info {
         gap: 25px;
